@@ -1,0 +1,35 @@
+.container-font {
+  background: #f4f4f4;
+  width: 60rem;
+}
+.container-font .font-style {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 2rem;
+  margin-left: 0.4rem;
+}
+.container-font .styles {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: 2.4rem;
+}
+.container-font .styles .first {
+  display: flex;
+  gap: 20rem;
+  align-items: center;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid black;
+}
+.container-font .styles .first .right {
+  cursor: pointer;
+  color: #1b72e8;
+}
+.container-font .styles .first .one {
+  font-size: 2rem;
+}
+.container-font .styles .first .two {
+  font-size: 2rem;
+  font-weight: italic;
+}/*# sourceMappingURL=fontStyle.css.map */

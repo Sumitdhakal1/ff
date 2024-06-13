@@ -1,0 +1,124 @@
+.container-fsp {
+    margin-top: 1rem;
+    border-bottom: 1px solid black;
+
+    .fsp {
+        border-bottom: 1px solid black;
+        padding-left: 3rem;
+        gap: 1rem;
+        display: flex;
+        padding-bottom: 1rem;
+
+        span {
+            margin-top: 0.8rem;
+        }
+    }
+
+    .font-tags {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding-left: 3rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+
+            li {
+                background-color: #e7eaee;
+                padding: 0.5rem;
+                border-radius: 10px;
+            }
+
+            li:hover {
+                background-color: #d7dade;
+
+            }
+        }
+
+        .fsptags {
+            display: none;
+        }
+
+        .pi {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+
+            .price {
+                display: flex;
+                gap: 0.4rem;
+
+
+                .lineThrough {
+                    text-decoration: line-through;
+                }
+
+                .bold {
+                    font-weight: bold;
+                }
+
+                .bolder {
+                    margin-top: -3px;
+                    font-weight: bolder;
+                    font-size: 21px;
+                }
+            }
+
+            .button {
+                margin-bottom: 0.2rem;
+                padding: 0.8rem;
+                border-radius: 8px;
+                border: none;
+                background-color: #17ac64;
+                color: white;
+            }
+
+
+        }
+
+    }
+}
+
+
+@media(max-width:1300px) {
+    .container-fsp {
+        border-bottom: none;
+
+        .fsp {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .font-tags {
+            display: flex;
+
+
+            ul {
+                display: none;
+            }
+
+
+            .pi {
+                display: none;
+                display: flex;
+                flex-direction: column;
+
+
+                .price {
+                    display: flex;
+                    // display: none;
+                    gap: 0.4rem;
+                }
+            }
+
+            .but {
+                display: none;
+            }
+        }
+
+    }
+}

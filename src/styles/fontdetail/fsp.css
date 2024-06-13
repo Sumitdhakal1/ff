@@ -1,0 +1,94 @@
+.container-fsp {
+  margin-top: 1rem;
+  border-bottom: 1px solid black;
+}
+.container-fsp .fsp {
+  border-bottom: 1px solid black;
+  padding-left: 3rem;
+  gap: 1rem;
+  display: flex;
+  padding-bottom: 1rem;
+}
+.container-fsp .fsp span {
+  margin-top: 0.8rem;
+}
+.container-fsp .font-tags {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+.container-fsp .font-tags ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.container-fsp .font-tags ul li {
+  background-color: #e7eaee;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+.container-fsp .font-tags ul li:hover {
+  background-color: #d7dade;
+}
+.container-fsp .font-tags .fsptags {
+  display: none;
+}
+.container-fsp .font-tags .pi {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.container-fsp .font-tags .pi .price {
+  display: flex;
+  gap: 0.4rem;
+}
+.container-fsp .font-tags .pi .price .lineThrough {
+  text-decoration: line-through;
+}
+.container-fsp .font-tags .pi .price .bold {
+  font-weight: bold;
+}
+.container-fsp .font-tags .pi .price .bolder {
+  margin-top: -3px;
+  font-weight: bolder;
+  font-size: 21px;
+}
+.container-fsp .font-tags .pi .button {
+  margin-bottom: 0.2rem;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #17ac64;
+  color: white;
+}
+
+@media (max-width: 1300px) {
+  .container-fsp {
+    border-bottom: none;
+  }
+  .container-fsp .fsp {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-fsp .font-tags {
+    display: flex;
+  }
+  .container-fsp .font-tags ul {
+    display: none;
+  }
+  .container-fsp .font-tags .pi {
+    display: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .container-fsp .font-tags .pi .price {
+    display: flex;
+    gap: 0.4rem;
+  }
+  .container-fsp .font-tags .but {
+    display: none;
+  }
+}/*# sourceMappingURL=fsp.css.map */

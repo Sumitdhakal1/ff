@@ -1,0 +1,117 @@
+.tabs {
+  display: flex;
+  gap: 0.4rem;
+  padding: 0.4rem;
+  margin-left: 1.4rem;
+}
+
+.container .first {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 3rem;
+}
+.container .first .font-name {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+}
+.container .first .font-name .name {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.container .first .font-name .by-linotype {
+  border-bottom: 0.9px solid black;
+}
+.container .first .font-name .same-line {
+  display: flex;
+  gap: 0.5rem;
+}
+.container .first .font-name .same-line .bestseller {
+  background-color: #e5efe7;
+  color: #6fa784;
+  font-weight: bold;
+  border-radius: 14px;
+}
+.container .first .font-name .same-line .bestseller .warpper {
+  padding: 5px 20px;
+}
+.container .first .font-name .same-line .off {
+  background-color: #f5e4ea;
+  color: #dc72a9;
+  font-weight: bold;
+  border-radius: 14px;
+}
+.container .first .font-name .same-line .off .warpper {
+  padding: 5px 20px;
+}
+.container .first .add {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  font-weight: 500;
+}
+.container .first .add .fav {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.container .first .add .addto {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.container .subnav ul {
+  display: flex;
+  gap: 2rem;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .container .first .font-name {
+    display: flex;
+    flex-direction: column;
+    margin-top: -3rem;
+  }
+  .container .first .font-name .name {
+    font-size: 1rem;
+    margin-right: 3rem;
+  }
+  .container .first .font-name .styles {
+    display: flex;
+    gap: 0.8rem;
+  }
+  .container .first .font-name .styles span {
+    font-size: 16px;
+  }
+  .container .first .font-name .styles .by-linotype {
+    font-size: 16px;
+  }
+  .container .first .font-name .bestseller {
+    display: flex;
+    flex-direction: row;
+  }
+  .container .first .add {
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+    justify-content: end;
+  }
+  .container .first .add .fav span {
+    display: none;
+  }
+  .container .first .add .addto span {
+    display: none;
+  }
+  .container .subnav {
+    background-color: #f9fafb;
+    border-bottom: 0.3px solid black;
+    border-top: 0.3px solid black;
+  }
+  .container .subnav ul {
+    padding: 0.8rem 0;
+    overflow-x: auto;
+  }
+  .container .subnav ul li a {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=subheader.css.map */

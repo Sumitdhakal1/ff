@@ -1,0 +1,164 @@
+// head
+.tabs {
+    display: flex;
+    gap: 0.4rem;
+    padding: 0.4rem;
+    margin-left: 1.4rem;
+}
+
+.container {
+
+    .first {
+        display: flex;
+        justify-content: space-between;
+        margin: 4rem 3rem;
+
+        .font-name {
+            display: flex;
+            gap: 1rem;
+            align-items: baseline;  
+            
+
+            .name {
+                font-weight: bold;
+                font-size: 1.8rem;
+            }
+
+            .by-linotype {
+                border-bottom: 0.9px solid black;
+
+            }
+
+            .same-line {
+                display: flex;
+                gap: 0.5rem;
+                .bestseller {
+                    background-color: #e5efe7;
+                    color: #6fa784;
+                    font-weight: bold;
+                    border-radius: 14px;
+
+                    .warpper {
+                        padding: 5px 20px;
+
+                        .uparrow {}
+                    }
+                }
+
+                .off {
+                    background-color: #f5e4ea;
+                    color: #dc72a9;
+                    font-weight: bold;
+                    border-radius: 14px;
+
+                    .warpper {
+                        padding: 5px 20px;
+                    }
+                }
+            }
+        }
+
+        .add {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+            font-weight: 500;
+
+            .fav {
+                display: flex;
+                align-items: center;
+                gap: 0.4rem;
+            }
+
+            .addto {
+                display: flex;
+                align-items: center;
+                gap: 0.4rem;
+            }
+        }
+    }
+
+    .subnav {
+        ul {
+            display: flex;
+            gap: 2rem;
+            margin-left: 1rem;
+
+        }
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    .container {
+        .first {
+            .font-name {
+                display: flex;
+                flex-direction: column;
+                margin-top: -3rem;
+
+                .name {
+                    font-size: 1rem;
+                    margin-right: 3rem;
+                }
+
+                .styles {
+                    display: flex;
+                    gap: 0.8rem;
+
+                    span {
+
+                        font-size: 16px;
+                    }
+
+                    .by-linotype {
+                        font-size: 16px;
+                    }
+                }
+
+                .bestseller {
+                    display: flex;
+                    flex-direction: row;
+
+                    .warpper {}
+                }
+            }
+
+            .add {
+                display: flex;
+                align-items: baseline;
+                gap: 0.4rem;
+                justify-content: end;
+
+                .fav {
+                    span {
+                        display: none;
+                    }
+                }
+
+                .addto {
+                    span {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .subnav {
+            background-color: #f9fafb;
+            border-bottom: 0.3px solid black;
+            border-top: 0.3px solid black;
+            ul {
+                padding: 0.8rem 0;
+                overflow-x: auto;
+
+                li {
+
+                    a {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

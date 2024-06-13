@@ -1,0 +1,161 @@
+.container {
+  .data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    margin: 5rem 3rem;
+
+    .image-slider {
+
+      .image {
+
+        img {
+          width: 50.5rem;
+          border-radius: 10px;
+          background: green;
+        }
+      }
+
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .font-name {
+        font-size: 2.5rem;
+        margin-bottom: 0.6rem;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      .price {
+        margin-top: 2rem;
+      }
+
+      .buttons {
+        margin-top: 2rem;
+        display: flex;
+        gap: 1rem;
+
+        button {
+          border: none;
+          color: white;
+          padding: 0.8rem;
+          border-radius: 6px;
+          cursor: pointer;
+        }
+
+        .addbtn {
+          background-color: #24a567;
+
+        }
+
+        .subscription {
+          color: black;
+          background-color: white;
+          border: 1px solid black;
+        }
+      }
+
+      .exp {
+        margin-top: 2rem;
+        background-color: #f7edf2eb;
+        padding: 1rem;
+        border-radius: 10px;
+      }
+
+    }
+  }
+
+  .tags-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 1.2rem 3rem;
+
+    span {}
+
+    ul {
+      width: 50%;
+      margin-top: 1rem;
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+
+      li {
+        background-color: #e7eaee;
+        padding: 0.5rem;
+        border-radius: 10px;
+        cursor: pointer;
+
+      }
+
+      li:hover {
+        background-color: #d7dade;
+
+      }
+    }
+
+    ul::-webkit-scrollbar {
+      width: 0;
+    }
+
+    ul::after {
+      background-color: #24a567;
+    }
+
+
+
+  }
+}
+
+@media screen and (max-width:1300px) {
+  .container {
+    .data {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .image-slider {
+
+        .image {
+
+          img {
+            background: pink;
+          }
+        }
+      }
+
+      .info {
+        display: flex;
+        margin-top: 1rem;
+
+        .buttons {
+          display: flex;
+          flex-direction: column;
+
+          button {}
+        }
+      }
+    }
+
+    .tags-container {
+
+      ul {
+        overflow-x: auto;
+      }
+
+      ul::-webkit-scrollbar {
+        width: 0;
+      }
+    }
+
+  }
+}

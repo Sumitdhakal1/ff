@@ -1,0 +1,55 @@
+.mobile-view{
+    display: none;
+}
+@media(max-width:1400px) {
+    .mobile-view {
+        display: block;
+        .select-menu {
+            width: 380px;
+            margin: 15px auto;
+
+            .select-btn {
+                display: flex;
+                height: 55px;
+                background: #e7eaee;
+                align-items: center;
+                padding: 20px;
+                font-size: 18px;
+                font-weight: 400;
+                border-radius: 8px;
+                justify-content: space-between;
+                cursor: pointer;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+                .sBtn-txt {}
+            }
+
+            .options {
+                position: relative;
+                background: #e7eaee;
+                border-radius: 8px;
+                margin-top: 10px;
+                padding: 20px;
+                overflow-x: auto;
+                height: 15rem;
+
+                .option {
+                    display: flex;
+                    cursor: pointer;
+                    height: 55px;
+                    padding: 0 8px;
+                    border-radius: 8px;
+                    align-items: center;
+                    overflow-x: auto;
+
+                    .option-text {}
+                }
+
+                .option:hover {
+                    background-color: #bbbec4;
+                }
+            }
+
+        }
+    }
+}

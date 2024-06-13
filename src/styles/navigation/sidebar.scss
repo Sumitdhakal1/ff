@@ -1,0 +1,9 @@
+.sidebar-container{
+    content: "";
+    background-color: rgb(216, 156, 156);
+    position: absolute;
+    width: 40rem;
+    height: 60rem;
+    z-index: 1000;
+     display: none;
+}
